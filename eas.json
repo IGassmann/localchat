@@ -4,6 +4,9 @@
     "appVersionSource": "remote"
   },
   "build": {
+    "base": {
+      "corepack": true
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal",
