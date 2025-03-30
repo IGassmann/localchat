@@ -2,6 +2,8 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
     "paths": {
       "@/*": [
         "./src/*"
@@ -9,10 +11,11 @@
     }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts",
-    "nativewind-env.d.ts"
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./.expo/types/**/*.ts",
+    "./expo-env.d.ts",
+    "./nativewind-env.d.ts",
+    "./tailwind.config.ts"
   ]
 }
